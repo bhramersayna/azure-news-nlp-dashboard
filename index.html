@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Azure News NLP Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Azure News NLP Dashboard</h1>
+
+        <p>
+            News Entity Extraction using Azure AI Language Service
+        </p>
+
+        <div class="stats">
+
+            <div class="card">
+                <h2 id="totalEntities">0</h2>
+                <p>Total Entities</p>
+            </div>
+
+            <div class="card">
+                <h2 id="personCount">0</h2>
+                <p>Persons</p>
+            </div>
+
+            <div class="card">
+                <h2 id="orgCount">0</h2>
+                <p>Organizations</p>
+            </div>
+
+        </div>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search entities..."
+        >
+        <input type="file" id="fileInput">
+        <button onclick="analyzeNews()">
+            Analyze News Documents
+        </button>
+        <canvas id="entityChart"></canvas>
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Entity</th>
+                    <th>Category</th>
+                    <th>Confidence</th>
+                </tr>
+            </thead>
+
+            <tbody id="resultsBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <footer>
+        Developed using Azure AI Language Service
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
