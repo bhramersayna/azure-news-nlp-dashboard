@@ -214,6 +214,29 @@ The project successfully demonstrated a scalable cloud-based NLP solution using 
 
 ---
 
+# Live Dashboard
+
+## Local Access
+
+Run the Flask server:
+
+```bash
+python server.py
+```
+
+Then open:
+
+```text
+http://127.0.0.1:5000/analyze
+```
+
+For the dashboard interface, open:
+
+```text
+index.html
+```
+
+OR use the VS Code Live Server extension.
 # Author
 
 Sayna
